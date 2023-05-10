@@ -3,19 +3,36 @@
 //nadas donde se encuentra el valor, es decir en que fila y columna se encuentra. En caso de no
 //encontrar el valor dentro de la matriz se debe mostrar un mensaje.
 
-Algoritmo sin_titulo
-	definir i,j,matriz,num Como Entero
-	definir bandera como logico
+Algoritmo ejercicio_2
+	definir matriz Como Entero
 	dimension matriz(5,5)
-	bandera=falso
+	rellenarMatriz(matriz)
+	mostrarMatriz(matriz)
+	buscarNumero(matriz)
+FinAlgoritmo
+
+SubProceso rellenarMatriz(matriz)
+	definir i,j Como Entero	
 	para i=0 hasta 4
 		para j=0 hasta 4
-			matriz(i,j)=Aleatorio(-100,100)
-			Escribir  "(" matriz(i,j) ")" sin saltar
+			matriz(i,j)=Aleatorio(1,10)
+		FinPara
+	FinPara
+FinSubProceso
+
+SubProceso mostrarMatriz(matriz)
+	definir i,j Como Entero	
+	para i=0 hasta 4
+		para j=0 hasta 4
+			escribir sin saltar "[" matriz(i,j) "]"
 		FinPara
 		Escribir ""
 	FinPara
-	Escribir ""
+FinSubProceso
+
+SubProceso buscarNumero(matriz)
+	definir num,i,j Como Entero
+	definir bandera Como Logico
 	Escribir "Ingrese un numero entero a buscar:"
 	leer num
 	para i=0 hasta 4
@@ -29,4 +46,5 @@ Algoritmo sin_titulo
 	si bandera=falso Entonces
 		Escribir "El numero no se encontro dentro de la matriz"
 	FinSi
-FinAlgoritmo
+FinSubProceso
+	
