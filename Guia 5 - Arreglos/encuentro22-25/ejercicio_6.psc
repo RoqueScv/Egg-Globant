@@ -30,11 +30,11 @@ SubProceso esMagica(matriz,n,nMagico por valor)
 	definir i,j,sumaF,sumaC,sumaD1,sumaD2 Como Entero
 	definir bandera Como Logico
 	bandera=falso
-	sumaF=0
-	sumaC=0
 	sumaD1=0
 	sumaD2=0
 	para i=0 hasta n-1
+		sumaF=0
+		sumaC=0
 		para j=0 hasta n-1
 			sumaF=sumaF+matriz(i,j)
 			sumaC=sumaC+matriz(j,i)
@@ -48,8 +48,6 @@ SubProceso esMagica(matriz,n,nMagico por valor)
 		si sumaF<>nMagico(matriz,n) o SumaC<>nMagico(matriz,n)
 			bandera=verdadero
 		FinSi
-		sumaF=0
-		sumaC=0
 	FinPara
 	si sumaD1<>nMagico(matriz,n) o sumaD2<>nMagico(matriz,n)
 		bandera=verdadero
