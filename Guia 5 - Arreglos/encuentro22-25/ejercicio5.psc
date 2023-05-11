@@ -2,7 +2,7 @@
 //trando la manera de que la frase se muestre de manera continua en la matriz.
 //Por ejemplo, si tenemos la palabra habilidad, nuestra matriz se debería ver así:
 
-Algoritmo sin_titulo
+Algoritmo ejercicio_5
 	definir matriz Como Caracter
 	Dimension matriz(3,3)
 	rellenarMatriz(matriz)
