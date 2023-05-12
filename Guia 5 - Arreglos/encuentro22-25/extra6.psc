@@ -8,7 +8,7 @@ Algoritmo sin_titulo
 	inicializar(matriz,vector,matrizRes)
 	mostrarVector(vector)
 	mostrarMatriz(matriz)
-	inicializarMatrizRes(matriz,vector,matrizRes)
+	matrizR(matriz,vector,matrizRes)
 	mostrarMatriz(matrizRes)
 FinAlgoritmo
 
@@ -34,7 +34,6 @@ SubProceso inicializar(matriz,vector,matrizRes)
 		vector[i]=Aleatorio(0,9)
 		para j=0 hasta 2
 			matriz(i,j)=Aleatorio(0,9)
-			matrizRes(i,j)=matriz(i,j)*vector[i]
 		FinPara
 	FinPara
 FinSubProceso
@@ -50,7 +49,7 @@ SubProceso mostrarMatriz(matriz)
 	FinPara
 FinSubProceso
 
-SubProceso inicializarMatrizRes(matriz,vector,matrizRes)
+SubProceso matrizR(matriz,vector,matrizRes)
 	definir i,j Como Entero
 	para i=0 hasta 2
 		para j=0 hasta 2
