@@ -1,5 +1,6 @@
 //Crear una matriz de orden n * m (donde n y m son valores ingresados por el usuario), llenarla
 //con números aleatorios entre 1 y 100 y mostrar su traspuesta. 
+
 Algoritmo ejercicio_extra_2
 	definir matriz,f,c,i,j Como Entero
 	Escribir "Ingrese las dimensiones de la matriz cuadrada(Filas/columnas):"

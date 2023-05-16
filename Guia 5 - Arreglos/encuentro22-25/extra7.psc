@@ -38,6 +38,7 @@ FinSubProceso
 SubProceso mostrarMatriz(matriz)
 	definir i,j Como Entero
 	para i=0 hasta 5
+		Escribir "Producto" i+1 sin saltar
 		para j=0 hasta 5
 			Escribir sin saltar "[" matriz(i,j) "]"
 		FinPara

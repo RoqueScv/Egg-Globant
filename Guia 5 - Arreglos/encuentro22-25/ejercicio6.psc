@@ -26,7 +26,7 @@ funcion retorno = nMagico(matriz,n)
 		retorno=suma
 FinSubProceso
 
-SubProceso esMagica(matriz,n,nMagico por valor)
+SubProceso esMagica(matriz,n)
 	definir i,j,sumaF,sumaC,sumaD1,sumaD2 Como Entero
 	definir bandera Como Logico
 	bandera=falso
