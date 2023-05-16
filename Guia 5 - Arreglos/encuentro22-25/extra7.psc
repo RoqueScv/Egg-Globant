@@ -70,7 +70,6 @@ SubProceso mostrarMatriz(matriz)
 				sino
 					Escribir sin saltar "[" matriz(i,j) "]  "
 				FinSi
-
 		FinPara
 		Escribir ""
 	FinPara
