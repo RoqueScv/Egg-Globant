@@ -31,6 +31,7 @@ SubProceso calcularTotales(matriz)
 	para i=0 hasta 5
 		para j=0 hasta 5
 			si i<>5
+			si i<5
 				matriz(5,j)=matriz(5,j)+matriz(i,j)
 			FinSi
 			si j<>5 y i<>5
@@ -41,6 +42,7 @@ SubProceso calcularTotales(matriz)
 	FinPara
 FinSubProceso
 
+<<<<<<< HEAD
 SubProceso mostrarMatriz(matriz)
 	definir i,j Como Entero
 	para i=0 hasta 5
