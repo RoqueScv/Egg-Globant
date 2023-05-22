@@ -1,7 +1,5 @@
-Algoritmo sin_titulo
 Algoritmo ejercicio_extra_7
 	definir matriz Como Entero
-	dimension matriz[6,6]
 	dimension matriz[7,6]
 	inicializarMatriz(matriz)
 	calcularTotales(matriz)
@@ -12,11 +10,8 @@ FinAlgoritmo
 
 SubProceso inicializarMatriz(matriz)
 	definir i,j Como Entero
-	para i=0 hasta 5
 	para i=0 hasta 6
 		para j=0 hasta 5
-			si i<>5 y j<>5
-				matriz(i,j)=Aleatorio(1,10)
 			si i<5 y j<5
 				matriz(i,j)=Aleatorio(0,9)
 			SiNo
@@ -30,11 +25,9 @@ SubProceso calcularTotales(matriz)
 	definir i,j Como Entero
 	para i=0 hasta 5
 		para j=0 hasta 5
-			si i<>5
 			si i<5
 				matriz(5,j)=matriz(5,j)+matriz(i,j)
 			FinSi
-			si j<>5 y i<>5
 			si j<5 y i<5
 				matriz(i,5)=matriz(i,5)+matriz(i,j)
 			FinSi
@@ -42,26 +35,10 @@ SubProceso calcularTotales(matriz)
 	FinPara
 FinSubProceso
 
-<<<<<<< HEAD
-SubProceso mostrarMatriz(matriz)
-	definir i,j Como Entero
-	para i=0 hasta 5
-		Escribir "Producto" i+1 sin saltar
-		para j=0 hasta 5
-			Escribir sin saltar "[" matriz(i,j) "]"
-		FinPara
-		Escribir ""
-	FinPara
-FinSubProceso
-
-=======
->>>>>>> bfd62f5a5d0f5e1e14810dd8864c3f0f19e3e928
 SubProceso calcularMax(matriz)
 	definir i,j,max Como Entero
 	max=0
 	para j=0 hasta 5
-		para i=0 hasta 5
-			si i<>5 y matriz(i,j)>matriz(max,j)
 		para i=0 hasta 6
 			si i<5 y matriz(i,j)>matriz(max,j)
 				max=i
@@ -71,6 +48,7 @@ SubProceso calcularMax(matriz)
 				FinSi
 			FinSi
 		FinPara
+		Escribir "El maximo del dia " j+1 " fue del producto numero: " max+1
 		max=0
 	FinPara
 FinSubProceso
@@ -95,7 +73,7 @@ SubProceso mostrarMatriz(matriz)
 					Escribir sin saltar "[" matriz(i,j) "]  "
 				FinSi
 		FinPara
-		Escribir "El maximo del dia " j+1 " fue del producto numero: " max+1
+
 		Escribir ""
 	FinPara
 FinSubProceso
