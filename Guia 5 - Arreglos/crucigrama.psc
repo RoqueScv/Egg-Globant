@@ -14,6 +14,7 @@ Algoritmo crucigrama
 	imprimirMatriz(matriz, 9, 12)
 	acomodarPalabras(matriz)
 	imprimirMatriz(matriz, 9, 12)
+	Escribir "Fin algoritmo"
 FinAlgoritmo
 
 SubProceso inicializarMatriz(matriz)
