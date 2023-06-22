@@ -6,8 +6,48 @@
 package entidades;
 
 public class triangulo {
+    private int base;
+    private int altura;
+    private int area;
+    private int perimetro;
 
-    public static void main(String[] args) {
-
+    public triangulo(int base, int altura, int area, int perimetro) {
+        this.base = base;
+        this.altura = altura;
+        this.area = area;
+        this.perimetro = perimetro;
     }
+
+    public int getBase() {
+        return base;
+    }
+
+    public void setBase(int base) {
+        this.base = base;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public int getArea() {
+        return area;
+    }
+
+    public void setArea(int area) {
+        this.area = area;
+    }
+
+    public int getPerimetro() {
+        return perimetro;
+    }
+
+    public void setPerimetro(int perimetro) {
+        this.perimetro = perimetro;
+    }
+    
 }
