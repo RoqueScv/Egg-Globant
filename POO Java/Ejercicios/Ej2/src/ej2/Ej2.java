@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package ej2;
 
-import entidades.Libro;
-import servicios.servicio;
-public class main {
+/**
+ *
+ * @author Roque
+ */
+public class Ej2 {
 
-
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-            servicio ls = new servicio();
-            Libro l1 = ls.crearLibro();
-            ls.ImprimirDatos(l1);
+        // TODO code application logic here
     }
     
 }

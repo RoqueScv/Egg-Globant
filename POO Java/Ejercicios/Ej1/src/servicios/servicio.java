@@ -22,7 +22,7 @@ public class servicio {
         System.out.println("El ISBN es: " + l1.getIsbn());
         System.out.println("El Titulo es: " + l1.getTitulo());
         System.out.println("El Autor es: " + l1.getAutor());
-        System.out.println("");
+        System.out.println("Posee " + l1.getNumPag() + " paginas");
         
     }
 }
