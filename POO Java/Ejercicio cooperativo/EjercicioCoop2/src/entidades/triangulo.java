@@ -8,14 +8,12 @@ package entidades;
 public class triangulo {
     private int base;
     private int altura;
-    private int area;
-    private int perimetro;
+    private double area;
+    private double perimetro;
 
-    public triangulo(int base, int altura, int area, int perimetro) {
+    public triangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
-        this.area = area;
-        this.perimetro = perimetro;
     }
 
     public int getBase() {
@@ -24,6 +22,8 @@ public class triangulo {
 
     public void setBase(int base) {
         this.base = base;
+        calcularArea();
+        calcularPerimetro();
     }
 
     public int getAltura() {
@@ -32,22 +32,16 @@ public class triangulo {
 
     public void setAltura(int altura) {
         this.altura = altura;
-    }
-
-    public int getArea() {
-        return area;
-    }
-
-    public void setArea(int area) {
-        this.area = area;
-    }
-
-    public int getPerimetro() {
-        return perimetro;
-    }
-
-    public void setPerimetro(int perimetro) {
-        this.perimetro = perimetro;
-    }
+        calcularArea();
+    }    
     
+    public void calcularArea() {
+        area = (base*altura)/2;
+    }
+     private void calcularPerimetro() {
+        // Asumiendo que el triángulo es escaleno y se conocen los lados
+        // En este ejemplo, se utiliza la fórmula del perímetro para un triángulo equilátero
+        perimetro = 3 * base;
+    }
+     
 }
