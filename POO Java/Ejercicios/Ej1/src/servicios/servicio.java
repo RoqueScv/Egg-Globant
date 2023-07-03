@@ -1,11 +1,8 @@
 package servicios;
 import entidades.Libro;
 import java.util.Scanner;
-
 public class servicio {
-    
     Scanner read = new Scanner(System.in).useDelimiter("\n");
-    
     public Libro crearLibro() {
         Libro l1 = new Libro();
         System.out.println("Ingrese ISBN");
@@ -23,6 +20,5 @@ public class servicio {
         System.out.println("El Titulo es: " + l1.getTitulo());
         System.out.println("El Autor es: " + l1.getAutor());
         System.out.println("Posee " + l1.getNumPag() + " paginas");
-        
     }
 }
