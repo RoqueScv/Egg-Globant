@@ -11,6 +11,7 @@ public class Servicios {
         for (int i = 0; i < arreglo1.getArreglo().length ; i++) {
             System.out.printf("[%.2f]", arreglo1.getArreglo()[i]);
         }
+        System.out.println("");
     }
 
     public Arreglo crearArreglo(int dimension) {

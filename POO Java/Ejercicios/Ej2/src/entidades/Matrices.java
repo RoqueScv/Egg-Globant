@@ -1,11 +1,15 @@
 package entidades;
 
 // Clase Entidades
-class Entidades {
+
+import java.util.Arrays;
+import java.util.Random;
+
+class Matrices {
     private double[] arregloA;
     private double[] arregloB;
 
-    public Entidades() {
+    public Matrices() {
         arregloA = new double[50];
         arregloB = new double[20];
     }
