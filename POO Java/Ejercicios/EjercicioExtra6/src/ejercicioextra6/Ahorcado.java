@@ -71,7 +71,10 @@ public class Ahorcado {
     public int longitud(String[] palabra) {
     return palabra.length;
     }
-    public void buscar(String letra, String[] palabra) {
+    public void buscar(String[] palabra) {
+        Scanner read=new Scanner(System.in).useDelimiter("\n");
+        System.out.println("Ingrese una letra:");
+        String letra=read.next();
         for (int i = 0; i < palabra.length; i++) {
             if (letra.equals(palabra[i])) {
                 encontradas++;
@@ -83,8 +86,9 @@ public class Ahorcado {
             System.out.println("no se encontro la letra " + letra);
         }
     }
-    public String[] reeemplazar(String letra, String[] palabra,String[] aux) {
+    public String[] reemplazar(String letra, String[] palabra,String[] aux) {
         for (int i = 0; i < palabra.length; i++) {
+            
             if (letra.equals(palabra[i])) {
                 aux[i]=letra;
             }
@@ -103,14 +107,15 @@ public class Ahorcado {
         int i=0;
         Boolean bandera=true;
         do {
-            System.out.println("Ingrese una letra:");
-            String letra=read.next();
+
+            
             buscar(letra,ahorcado1.palabra);
+            
+            
             i++;
         } while (bandera && i<ahorcado1.jugadas);
+        
     }
-    
-            
     public static void main(String[] args) {
         Ahorcado ahorcado1=new Ahorcado();
         ahorcado1.juego();
