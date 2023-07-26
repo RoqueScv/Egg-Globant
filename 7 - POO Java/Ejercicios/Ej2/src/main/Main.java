@@ -3,7 +3,6 @@ package main;
 import java.util.Arrays;
 import java.util.Random;
 import servicios.Service;
-import entidades.Matrices;
 
 // Clase principal con el método main
 public class Main {

@@ -13,12 +13,10 @@ public class ClienteService {
     static int ID = 0;
 //registrarCliente(): lo registra en el sistema.
     public void registrarCliente() {
-
         c1.setId(ID);
         ID++;
         System.out.print("Ingrese el nombre: ");
         c1.setNombre(read.next());
-
         System.out.print("Ingrese la edad: ");
         c1.setEdad(read.nextInt());
         System.out.print("Ingrese el peso: ");
