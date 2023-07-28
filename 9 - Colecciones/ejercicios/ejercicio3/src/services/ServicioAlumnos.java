@@ -6,7 +6,7 @@ import java.util.Scanner;
 import Entities.*;
 
 public class ServicioAlumnos {
-    ArrayList<Alumno> listaAlumnos = new ArrayList<Alumno>();
+    ArrayList<Alumno> listaAlumnos = new ArrayList<>();
     Scanner input = new Scanner(System.in).useDelimiter("\n");
     public void generarLista(){
        
