@@ -52,9 +52,7 @@ public class PeliculaServicio {
         });
         System.out.println("-----");
         }
-    
      public void ordernarPeliculasDuracionMenorAMayor() {
-
         peliculas.sort(Pelicula.compararDuracion);
     }
 

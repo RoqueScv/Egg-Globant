@@ -9,8 +9,6 @@ public class ServicioAlumnos {
     ArrayList<Alumno> listaAlumnos = new ArrayList<>();
     Scanner input = new Scanner(System.in).useDelimiter("\n");
     public void generarLista(){
-       
-        boolean flag = true;
         do {
             Alumno a = new Alumno();
             System.out.println("Ingrese nombre del alumno");
@@ -23,11 +21,7 @@ public class ServicioAlumnos {
             a.setNotas(aux);
             listaAlumnos.add(a);
             System.out.println("Presione cualquier letra para continuar o n para salir.");
-            if(input.next().equalsIgnoreCase("n")){ 
-                flag = false;
-            } 
-        
-        }while(flag);
+        }while(!(input.next().equalsIgnoreCase("n")));
     }
 
     public void mostrarLista(){
@@ -68,5 +62,31 @@ public class ServicioAlumnos {
         }
         return -1;
     }
-    
+    public void menu() {
+        int opc;
+        do {
+            System.out.println("Que desea hacer?");
+            System.out.println("1-Generar");
+            System.out.println("2-Buscar");
+            System.out.println("3-Mostrar");
+            System.out.println("4-Salir");
+            opc = input.nextInt();
+            switch (opc) {
+                case 1:
+                    generarLista();
+                    break;
+                case 2:
+                    buscarAlumno();
+                    break;
+                case 3:
+                    mostrarLista();
+                    break;
+            }
+        } while (opc !=4);
+        
+        
+        
+
+                
+    }
 }

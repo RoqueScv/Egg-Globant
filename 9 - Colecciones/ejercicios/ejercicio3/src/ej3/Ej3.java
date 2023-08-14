@@ -5,9 +5,8 @@ import Services.ServicioAlumnos;
 public class Ej3 {
     public static void main(String[] args) {
         ServicioAlumnos s = new ServicioAlumnos();
-        s.generarLista();
-        s.mostrarLista();
-        s.buscarAlumno();
+        s.menu();   
+        
     }
 }
 
