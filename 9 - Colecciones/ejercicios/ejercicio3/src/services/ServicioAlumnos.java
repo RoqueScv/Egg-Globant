@@ -61,5 +61,31 @@ public class ServicioAlumnos {
         }
         return -1;
     }
-    
+    public void menu() {
+        int opc;
+        do {
+            System.out.println("Que desea hacer?");
+            System.out.println("1-Generar");
+            System.out.println("2-Buscar");
+            System.out.println("3-Mostrar");
+            System.out.println("4-Salir");
+            opc = input.nextInt();
+            switch (opc) {
+                case 1:
+                    generarLista();
+                    break;
+                case 2:
+                    buscarAlumno();
+                    break;
+                case 3:
+                    mostrarLista();
+                    break;
+            }
+        } while (opc !=4);
+        
+        
+        
+
+                
+    }
 }
