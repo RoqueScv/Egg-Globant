@@ -54,19 +54,24 @@ public class PeliculaServicio {
         }
     
      public void ordernarPeliculasDuracionMenorAMayor() {
-
+         System.out.println("ordenando segun duracion de menor a mayor");
         peliculas.sort(Pelicula.compararDuracion);
     }
 
     public void ordernarPeliculasDuracionMayorAMenor() {
+        System.out.println("ordenando segun duracion de mayor a menor");
         peliculas.sort(Pelicula.compararDuracion.reversed());
     }
 
     public void ordernarPeliculasTitulo() {
+        System.out.println("ordenando por titulo");
+
         peliculas.sort(Pelicula.compararTitulo);
     }
 
     public void ordernarPeliculasDirector() {
+        System.out.println("ordenando por director");
         peliculas.sort(Pelicula.compararDirector);
+        
     }
     }

@@ -8,9 +8,8 @@ import Entities.*;
 public class ServicioAlumnos {
     ArrayList<Alumno> listaAlumnos = new ArrayList<>();
     Scanner input = new Scanner(System.in).useDelimiter("\n");
+    
     public void generarLista(){
-       
-        boolean flag = true;
         do {
             Alumno a = new Alumno();
             System.out.println("Ingrese nombre del alumno");
@@ -23,11 +22,7 @@ public class ServicioAlumnos {
             a.setNotas(aux);
             listaAlumnos.add(a);
             System.out.println("Presione cualquier letra para continuar o n para salir.");
-            if(input.next().equalsIgnoreCase("n")){ 
-                flag = false;
-            } 
-        
-        }while(flag);
+        }while(!(input.next().equalsIgnoreCase("n")));
     }
 
     public void mostrarLista(){
@@ -57,8 +52,6 @@ public class ServicioAlumnos {
         for (int i = 0; i < listaAlumnos.size() ; i++) {
             if (listaAlumnos.get(i).getNombre().equalsIgnoreCase(nombreBuscado)){
                 ArrayList<Integer> notasAlum = listaAlumnos.get(i).getNotas();
-                
-                
                 for (int j = 0; j < 3; j++) {
                     sumatoria += notasAlum.get(j);
 //                  sumatoria = sumatoria + notasAlum.get(j); es lo mismo

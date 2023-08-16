@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class Alumno {
     private String nombre;
-    private ArrayList<Integer> notas = new ArrayList<>();
+    private ArrayList<Integer> notas;
 
     public String getNombre() {
         return nombre;
