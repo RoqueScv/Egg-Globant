@@ -4,15 +4,16 @@ import java.util.ArrayList;
 
 public class Baraja {
     
-    private ArrayList<Carta> baraja = new ArrayList();
+    private ArrayList<Carta> baraja;
     
     public Baraja() {
+        baraja = new ArrayList();
     }
 
     public Baraja(ArrayList<Carta> baraja) {
         this.baraja = baraja;
     }    
-    
+
     public void setBaraja(ArrayList<Carta> baraja) {
         this.baraja = baraja;
     }

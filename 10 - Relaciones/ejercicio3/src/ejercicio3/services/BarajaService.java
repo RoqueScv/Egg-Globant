@@ -24,7 +24,7 @@ public class BarajaService {
             }
         }
     }
-    
+
     public void barajar() {
         Collections.shuffle(mazo.getBaraja());
     }
@@ -35,8 +35,10 @@ public class BarajaService {
             System.out.println("No hay mas cartas");
         } else {
             System.out.println("La siguiente carta es");
-           
-            Carta carta = mazo.getBaraja().get(mazo.getBaraja().size()-1);
+            
+//          Define la primera carta
+            Carta carta = mazo.getBaraja().get(0);
+            
 //          Imprime la carta
             System.out.println(carta);
             
@@ -44,7 +46,7 @@ public class BarajaService {
             monton.getBaraja().add(carta);
             
 //         La borra de baraja
-            mazo.getBaraja().remove(mazo.getBaraja().size()-1);
+            mazo.getBaraja().remove(carta);
         }
     }
     

@@ -21,6 +21,8 @@ public class Ejercicio3 {
                 bs1.darCartas();
                 bs1.cartasMonton();
                 bs1.mostrarBaraja();
+                    bs1.siguienteCarta();
+                    bs1.cartasMonton();
     }
     
 }
