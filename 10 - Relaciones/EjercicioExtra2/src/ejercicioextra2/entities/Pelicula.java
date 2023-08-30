@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ejercicioextra2.entities;
-
 public class Pelicula {
     private String titulo;
     private int duracion;
