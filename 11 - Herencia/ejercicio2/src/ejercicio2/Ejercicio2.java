@@ -25,8 +25,6 @@ public class Ejercicio2 {
         ts2.crearTelevisor();
         ts2.precioFinal();
 
-        Electrodomestico lava0 = new Lavarropa();
-
         Electrodomestico lava1 = ls1.getLavarropa();
         Electrodomestico lava2 = ls2.getLavarropa();
         Electrodomestico tele1 = ts1.getTelevisor();

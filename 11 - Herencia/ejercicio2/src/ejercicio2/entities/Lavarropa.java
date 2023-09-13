@@ -10,6 +10,7 @@ public final class Lavarropa extends Electrodomestico {
     }
 
     public Lavarropa() {
+        
     }
 
     public int getCarga() {

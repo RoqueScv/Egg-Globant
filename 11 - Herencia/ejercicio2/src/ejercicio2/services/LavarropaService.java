@@ -5,6 +5,11 @@ import ejercicio2.entities.Lavarropa;
 public class LavarropaService extends ElectrodomesticoService {
 
     private Lavarropa lavarropa;
+    
+
+    public LavarropaService() {
+//        electrodomestico=new Lavarropa();
+    }
 
     public Lavarropa getLavarropa() {
         return lavarropa;
@@ -14,6 +19,7 @@ public class LavarropaService extends ElectrodomesticoService {
         crearElectrodomestico();
         System.out.println("Ingrese la carga del Lavarropa");
         int carga = read.nextInt();
+        
         lavarropa = new Lavarropa(electrodomestico.getPrecio(), electrodomestico.getColor(), electrodomestico.getConsumo(), electrodomestico.getPeso(), carga);
     }
 

@@ -29,7 +29,7 @@ public class ElectrodomesticoService {
     }
 
     public void crearElectrodomestico() {
-        electrodomestico = new Electrodomestico();
+        electrodomestico= new Electrodomestico();
         electrodomestico.setPrecio(1000);
         System.out.println("Ingrese el color");
         String color = read.next();
