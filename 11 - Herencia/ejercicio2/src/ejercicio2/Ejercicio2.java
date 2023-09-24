@@ -26,10 +26,11 @@ public class Ejercicio2 {
         ts2.precioFinal();
 
         Electrodomestico lava1 = ls1.getLavarropa();
+
         Electrodomestico lava2 = ls2.getLavarropa();
         Electrodomestico tele1 = ts1.getTelevisor();
         Electrodomestico tele2 = ts2.getTelevisor();
-
+        System.out.println("soy un " + lava1);
         arrayDeE.add(tele1);
         arrayDeE.add(tele2);
         arrayDeE.add(lava1);
