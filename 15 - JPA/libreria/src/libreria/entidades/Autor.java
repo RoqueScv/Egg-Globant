@@ -8,6 +8,7 @@ import javax.persistence.Id;
 public class Autor {
     @Id
     @GeneratedValue(generator = "uuid")
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String nombre;
     private Boolean alta;

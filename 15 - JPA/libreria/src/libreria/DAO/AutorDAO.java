@@ -10,14 +10,15 @@ public class AutorDAO extends DAO<Autor> {
     }
 
     public void eliminar(String id) throws Exception {
-        Autor autor = buscarPorId(id);
+
+        Autor autor = em.find(Autor.class, id);
         super.eliminar(autor);
     }
 
     public Autor buscarPorId(String id) throws Exception {
-        conectar();
+
         Autor autor = em.find(Autor.class, id);
-        desconectar();
+
         return autor;
     }
 
